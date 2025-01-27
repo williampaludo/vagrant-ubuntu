@@ -12,5 +12,5 @@ Para iniciar a máquina virtual utilize o comando:
 Após criar a máquina acesse via SSH utilizando o comando:  
 `vagrabt ssh`
 
-A pasta com nome "compartilhado" será compartilhada com a máquina criada pelo vagrantfile, assim todo arquivo que for colocado na maquina fisica dentro dessa pasta, sera acessivel na maquina virtual no caminho:  
+A pasta com nome "compartilhado" será compartilhada com a vm criada pelo Vagrantfile, assim todo arquivo que for colocado no host dentro dessa pasta, sera acessivel na vm no caminho:  
 `/desafio-projeto-vagrant/compartilhado`
