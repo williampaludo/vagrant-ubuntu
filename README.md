@@ -1,18 +1,51 @@
-# Desafio projeto Vagrant
+# **Desafio: Provisionamento de VM com Vagrant**
 
-<div align="left"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vagrant/vagrant-original.svg" height="30" alt="vagrant logo"  />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" height="30" alt="ubuntu logo"  />
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vagrant/vagrant-original.svg" height="30" alt="vagrant logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" height="30" alt="ubuntu logo" />
 </div>
 
- Desafio: Criar uma máquina virtual usando Vagrant com o sistema operacional Ubuntu 20.04, onfigurar a máquina com recursos específicos, sincronizar uma pasta local com a máquina virtual e versionar o projeto no GitHub.  
+## **Descrição**
+Este projeto tem como objetivo a criação e configuração de uma máquina virtual utilizando Vagrant com o sistema operacional Ubuntu 20.04. O desafio inclui configurar recursos específicos da máquina, sincronizar uma pasta local com a VM e versionar o projeto no GitHub.
 
- ###
+---
 
-Para iniciar a máquina virtual utilize o comando:  
-`vagrant up`
+## **Pré-requisitos**
+Antes de iniciar, certifique-se de ter instalado:
+- [Vagrant](https://www.vagrantup.com/downloads)
+- [VirtualBox](https://www.virtualbox.org/)
+- Git Bash (para usuários Windows) ou Terminal no Linux/macOS
 
-Após criar a máquina acesse via SSH utilizando o comando:  
-`vagrant ssh`
+---
 
-A pasta com nome "compartilhado" será compartilhada com a vm criada pelo Vagrantfile, assim todo arquivo que for colocado no host dentro dessa pasta, sera acessivel na vm no caminho:  
-`/desafio-projeto-vagrant/compartilhado`
+## **Passos para Execução**
+
+1. Clone o repositório para sua máquina local:
+   ```bash
+   git clone https://github.com/williampaludo/vagrant-ubuntu.git
+   cd vagrant-ubuntu
+   ```
+
+2. Inicie a máquina virtual com o comando:
+   ```bash
+   vagrant up
+   ```
+
+3. Após a criação da máquina, acesse-a via SSH:
+   ```bash
+   vagrant ssh
+   ```
+
+---
+
+## **Sincronização de Pastas**
+A pasta compartilhada chamada `compartilhado` será sincronizada entre o host e a VM. Qualquer arquivo adicionado a essa pasta no host estará acessível na VM no seguinte diretório:
+```bash
+/desafio-projeto-vagrant/compartilhado
+```
+
+---
+
+## **Conclusão**
+Este projeto demonstra a configuração básica de uma máquina virtual usando Vagrant, a sincronização de arquivos e a padronização de ambientes. Caso tenha dúvidas ou sugestões, sinta-se à vontade para contribuir ou abrir uma issue.
+
